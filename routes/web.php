@@ -18,5 +18,7 @@ use App\Http\Controllers\ListingController;
 Route::get('/show', [IndexController::class, 'show']);
 Route::get('/', [IndexController::class, 'index']);
 
-Route::resource('listing', ListingController::class)
-    ->only(['index', 'show']);
+Route::resource('listing', ListingController::class);
+
+// Route::resource('listing', ListingController::class)
+//     ->except(['destroy']);

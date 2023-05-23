@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Larazillow</title>
+    <?php echo app('Tightenco\Ziggy\BladeRouteGenerator')->generate(); ?>
     <?php echo app('Illuminate\Foundation\Vite')('resources/js/app.js'); ?>
     <?php if (!isset($__inertiaSsrDispatched)) { $__inertiaSsrDispatched = true; $__inertiaSsrResponse = app(\Inertia\Ssr\Gateway::class)->dispatch($page); }  if ($__inertiaSsrResponse) { echo $__inertiaSsrResponse->head; } ?>
 </head>
