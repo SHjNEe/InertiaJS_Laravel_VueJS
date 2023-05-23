@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ListingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/show', [IndexController::class, 'show']);
+Route::get('/', [IndexController::class, 'index']);
+
+Route::resource('listing', ListingController::class)
+    ->only(['index', 'show']);
