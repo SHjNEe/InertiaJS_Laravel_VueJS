@@ -46,7 +46,8 @@ class ListingController extends Controller
     public function store(Request $request)
     {
         //
-        Listing::create(
+        $user = $request->user();
+        $user->listings()->create(
             $request->validate([
                 'beds' => 'required|integer|min:0|max:20',
                 'baths' => 'required|integer|min:0|max:20',
