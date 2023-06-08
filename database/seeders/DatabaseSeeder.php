@@ -1,7 +1,6 @@
 <?php
 
 namespace Database\Seeders;
-
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,8 +20,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
 
         ]);
-        \App\Models\Listing::factory(20)->create([
-            'by_user_id' => 1
-        ]);
+        // \App\Models\Listing::factory(20)->create([
+        //     'by_user_id' => 1
+        // ]);
     }
 }
