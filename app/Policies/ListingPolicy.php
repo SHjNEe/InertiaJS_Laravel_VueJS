@@ -9,8 +9,8 @@ use Illuminate\Auth\Access\HandlesAuthorization;
 class ListingPolicy
 {
     use HandlesAuthorization;
-    
-    public function before(?User $user, $ability)
+
+    public function before(User $user, $ability)
     {
         if ($user->is_admin /*&& $ability === 'update'*/) {
             return true;
