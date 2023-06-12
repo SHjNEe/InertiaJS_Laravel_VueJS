@@ -2221,3 +2221,51 @@ Did you mean one of these?
 #62 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/trungs_m...')
 #63 {main}
 "} 
+[2023-06-12 16:46:03] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php:223)
+[stacktrace]
+#0 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('columns', 'uri,name,action...')
+#1 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--columns=uri,n...')
+#2 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--columns=uri,n...', true)
+#3 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Command/Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Console/Command.php(153): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(1063): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(320): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(174): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2023-06-12 16:46:05] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php:223)
+[stacktrace]
+#0 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('columns', 'uri,name,action...')
+#1 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--columns=uri,n...')
+#2 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--columns=uri,n...', true)
+#3 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Command/Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Console/Command.php(153): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(1063): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(320): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(174): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2023-06-12 16:46:08] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php:223)
+[stacktrace]
+#0 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('columns', 'uri,name,action...')
+#1 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--columns=uri,n...')
+#2 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--columns=uri,n...', true)
+#3 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Command/Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Console/Command.php(153): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(1063): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(320): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/symfony/console/Application.php(174): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
