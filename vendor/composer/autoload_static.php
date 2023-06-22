@@ -608,6 +608,8 @@ class ComposerStaticInit95e20c065ac14bd7d78a1496ae4e0927
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\IndexController' => __DIR__ . '/../..' . '/app/Http/Controllers/IndexController.php',
         'App\\Http\\Controllers\\ListingController' => __DIR__ . '/../..' . '/app/Http/Controllers/ListingController.php',
+        'App\\Http\\Controllers\\ListingOfferController' => __DIR__ . '/../..' . '/app/Http/Controllers/ListingOfferController.php',
+        'App\\Http\\Controllers\\RealtorListingAcceptOfferController' => __DIR__ . '/../..' . '/app/Http/Controllers/RealtorListingAcceptOfferController.php',
         'App\\Http\\Controllers\\RealtorListingController' => __DIR__ . '/../..' . '/app/Http/Controllers/RealtorListingController.php',
         'App\\Http\\Controllers\\RealtorListingImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/RealtorListingImageController.php',
         'App\\Http\\Controllers\\UserAccountController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserAccountController.php',

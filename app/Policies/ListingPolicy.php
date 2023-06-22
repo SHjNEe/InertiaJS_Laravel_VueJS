@@ -36,7 +36,9 @@ class ListingPolicy
      */
     public function view(?User $user, Listing $listing)
     {
-        return true;
+        // return true;
+        return $listing->sold_at === null
+            && ($user->id === $listing->by_user_id);
     }
 
     /**
@@ -59,7 +61,9 @@ class ListingPolicy
      */
     public function update(User $user, Listing $listing)
     {
-        return $user->id === $listing->by_user_id;
+        // return $user->id === $listing->by_user_id;
+        return $listing->sold_at === null
+            && ($user->id === $listing->by_user_id);
     }
 
     /**

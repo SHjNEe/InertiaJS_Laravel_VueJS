@@ -12,6 +12,8 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\IndexController' => $baseDir . '/app/Http/Controllers/IndexController.php',
     'App\\Http\\Controllers\\ListingController' => $baseDir . '/app/Http/Controllers/ListingController.php',
+    'App\\Http\\Controllers\\ListingOfferController' => $baseDir . '/app/Http/Controllers/ListingOfferController.php',
+    'App\\Http\\Controllers\\RealtorListingAcceptOfferController' => $baseDir . '/app/Http/Controllers/RealtorListingAcceptOfferController.php',
     'App\\Http\\Controllers\\RealtorListingController' => $baseDir . '/app/Http/Controllers/RealtorListingController.php',
     'App\\Http\\Controllers\\RealtorListingImageController' => $baseDir . '/app/Http/Controllers/RealtorListingImageController.php',
     'App\\Http\\Controllers\\UserAccountController' => $baseDir . '/app/Http/Controllers/UserAccountController.php',

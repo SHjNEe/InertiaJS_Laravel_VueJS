@@ -12,17 +12,24 @@
             </div>
         </Box>
 
-        <div v-else class="md:col-span-7 items-center">
-            This is displayed when there are offers!
+        <div v-else class="md:col-span-7 flex flex-col gap-4">
+            <Offer
+                v-for="offer in listing.offers"
+                :key="offer.id"
+                :offer="offer"
+                :listing-price="listing.price"
+            />
         </div>
 
-        <Box class="md:col-span-5">
-            <template #header>Basic Info</template>
-            <Price :price="listing.price" class="text-2xl font-bold" />
+        <div class="md:col-span-5">
+            <Box>
+                <template #header>Basic Info</template>
+                <Price :price="listing.price" class="text-2xl font-bold" />
 
-            <ListingSpace :listing="listing" class="text-lg" />
-            <ListingAddress :listing="listing" class="text-gray-500" />
-        </Box>
+                <ListingSpace :listing="listing" class="text-lg" />
+                <ListingAddress :listing="listing" class="text-gray-500" />
+            </Box>
+        </div>
     </section>
 </template>
 
@@ -33,6 +40,9 @@ import Price from "@/Components/Price.vue";
 import Box from "@/Components/UI/Box.vue";
 import { Link } from "@inertiajs/inertia-vue3";
 import { computed } from "vue";
+import Offer from "@/Pages/Realtor/Show/Components/Offer.vue";
+
 const props = defineProps({ listing: Object });
+
 const hasOffers = computed(() => props.listing.offers.length);
 </script>
