@@ -3293,3 +3293,15 @@ Did you mean one of these?
 [stacktrace]
 #0 {main}
 "} 
+[2023-06-24 12:06:17] local.ERROR: Uncaught Error: Interface "App\Models\MustVerifyEmail" not found in /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/app/Models/User.php:15
+Stack trace:
+#0 Command line code(1): include_once()
+#1 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Interface \"App\\Models\\MustVerifyEmail\" not found in /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/app/Models/User.php:15
+Stack trace:
+#0 Command line code(1): include_once()
+#1 {main}
+  thrown at /Users/trungs_macos/Desktop/Workspace/InertiaJS_Laravel_VueJS/app/Models/User.php:15)
+[stacktrace]
+#0 {main}
+"} 
