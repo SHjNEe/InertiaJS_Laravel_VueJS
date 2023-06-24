@@ -6,7 +6,9 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\UserAccountController;
 use App\Http\Controllers\ListingOfferController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\RealtorListingController;
+use App\Http\Controllers\NotificationSeenController;
 use App\Http\Controllers\RealtorListingImageController;
 use App\Http\Controllers\RealtorListingAcceptOfferController;
 
@@ -29,6 +31,19 @@ Route::get('/hello', [IndexController::class, 'show'])
 Route::resource('listing', ListingController::class)
     ->only(['index', 'show']);
 
+Route::resource('listing.offer', ListingOfferController::class)
+    ->middleware('auth')
+    ->only(['store']);
+
+Route::resource('notification', NotificationController::class)
+    ->middleware('auth')
+    ->only(['index']);
+
+Route::put(
+    'notification/{notification}/seen',
+    NotificationSeenController::class
+)->middleware('auth')->name('notification.seen');
+
 Route::get('login', [AuthController::class, 'create'])
     ->name('login');
 Route::post('login', [AuthController::class, 'store'])
@@ -38,9 +53,7 @@ Route::delete('logout', [AuthController::class, 'destroy'])
 
 Route::resource('user-account', UserAccountController::class)
     ->only(['create', 'store']);
-Route::resource('listing.offer', ListingOfferController::class)
-    ->middleware('auth')
-    ->only(['store']);
+
 Route::prefix('realtor')
     ->name('realtor.')
     ->middleware('auth')
@@ -53,6 +66,7 @@ Route::prefix('realtor')
         Route::resource('listing', RealtorListingController::class)
             // ->only(['index', 'destroy', 'edit', 'update', 'create', 'store'])
             ->withTrashed();
+
         Route::name('offer.accept')
             ->put(
                 'offer/{offer}/accept',

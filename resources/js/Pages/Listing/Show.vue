@@ -1,17 +1,21 @@
 <template>
     <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <Box class="md:col-span-7 flex items-center">
-            <div v-if="listing.images.length" class="grid grid-cols-2 gap-1">
+        <Box
+            v-if="listing.images.length"
+            class="md:col-span-7 flex items-center"
+        >
+            <div class="grid grid-cols-2 gap-1">
                 <img
                     v-for="image in listing.images"
                     :key="image.id"
                     :src="image.src"
                 />
             </div>
-            <div v-else class="w-full text-center font-medium text-gray-500">
-                No images
-            </div>
         </Box>
+        <EmptyState v-else class="md:col-span-7 flex items-center"
+            >No images</EmptyState
+        >
+
         <div class="md:col-span-5 flex flex-col gap-4">
             <Box>
                 <template #header> Basic info </template>
@@ -78,8 +82,9 @@
                     </div>
                 </div>
             </Box>
+
             <MakeOffer
-                v-if="user"
+                v-if="user && !offerMade"
                 :listing-id="listing.id"
                 :price="listing.price"
                 @offer-updated="offer = $event"
@@ -95,11 +100,12 @@ import ListingSpace from "@/Components/ListingSpace.vue";
 import Price from "@/Components/Price.vue";
 import Box from "@/Components/UI/Box.vue";
 import MakeOffer from "@/Pages/Listing/Show/Components/MakeOffer.vue";
+import { ref } from "vue";
+import { useMonthlyPayment } from "@/Composables/useMonthlyPayment";
 import { usePage } from "@inertiajs/inertia-vue3";
 import { computed } from "vue";
-import { ref } from "vue";
 import OfferMade from "./Show/Components/OfferMade.vue";
-import { useMonthlyPayment } from "@/Composables/useMonthlyPayment";
+import EmptyState from "@/Components/UI/EmptyState.vue";
 
 const interestRate = ref(2.5);
 const duration = ref(25);
@@ -108,13 +114,15 @@ const props = defineProps({
     listing: Object,
     offerMade: Object,
 });
+
 const offer = ref(props.listing.price);
 
-const page = usePage();
-const user = computed(() => page.props.value.user);
 const { monthlyPayment, totalPaid, totalInterest } = useMonthlyPayment(
     offer,
     interestRate,
     duration
 );
+
+const page = usePage();
+const user = computed(() => page.props.value.user);
 </script>
